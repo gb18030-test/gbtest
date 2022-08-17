@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1629135372195"
+    createdUser="Katherine.Carroll" id="-643c00aa:17b500717f8:-7e99"
+    selfDescribing="ghclient01.nonprod.hclpnp.com (10.134.59.150) - System Statistics (default)"
+    type="probe_resource" updatedTimestamp="1629135372195"
+    updatedUser="Katherine.Carroll" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig defaultFlag="true" name="default"
+        physicalResourceID="-643c00aa:17b500717f8:-7ea1" probeID="plugin.custom.SysStat">
+        <SysStatDatasource allProcesses="true" configuration="default"/>
+    </resourceConfig>
+</editableResource>

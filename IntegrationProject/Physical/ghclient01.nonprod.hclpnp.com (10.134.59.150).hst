@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1629135370789"
+    createdUser="Katherine.Carroll" id="-643c00aa:17b500717f8:-7ea1"
+    selfDescribing="ghclient01.nonprod.hclpnp.com (10.134.59.150)"
+    type="host_machine_resource" updatedTimestamp="1629135370789"
+    updatedUser="Katherine.Carroll" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="10.134.59.150" user_host_name="ghclient01.nonprod.hclpnp.com">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1611843861364"
+    createdUser="KATHERINE.CARROLL" id="-6f8580d3:1774960f4b9:-7ec3"
+    type="test_resource" updatedTimestamp="1611844867873"
+    updatedUser="KATHERINE.CARROLL" version="1.1">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="-6f8580d3:1774960f4b9:-7cc3"
+                selfDescribing="Iterate over a test data set"
+                type="iterate_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig description="" disableMappings="false"
+                    groupDataBy="field1" iterationContributor="true"
+                    maxIterationTime="0.0"
+                    maxIterationTimeExceededFailsTest="false"
+                    maxTotalIterationTime="0.0"
+                    maxTotalIterationTimeExceededFailsTest="false"
+                    name=" over Odd_Dataset_01" option="NOTHING"
+                    pacingtime="0.0" pacingtype="MIN_DURATION"
+                    performanceDisableValidation="false"
+                    performanceInstances="1"
+                    performanceInterleave="false"
+                    performanceMaximumIterationTime="0"
+                    performanceMaximumTestTime="0"
+                    performanceUseMaximumIterationTime="false"
+                    performanceUseMaximumTestTime="false" remoteAgent=""
+                    reportingLogIterations="1"
+                    reportingLogLogMessages="8" reportingLogMessages="4"
+                    reportingLogScriptExitCodes="8"
+                    reportingLogScriptOutput="8"
+                    reportingLogTagValues="8" reportingLogTimes="8"
+                    runSettingsContinueOnFail="true"
+                    runSettingsDelayEnabled="false"
+                    runSettingsDelayType="Fixed Delay"
+                    runSettingsIterations=""
+                    runSettingsMaximumDelayValue="0"
+                    runSettingsMinimumDelayValue="0"
+                    runSettingsRunFor="0" runSettingsRunType="Once Only"
+                    runSettingsTestDescription=""
+                    type="script:ECMAScript" useMaxIterationTime="false"
+                    useMaxTotalIterationTime="false" usepacing="false">
+                    <testDataSetReference
+                        id="-6f8580d3:1774960f4b9:-7d96"
+                        lkname="Odd_Dataset_01"
+                        lkpath="OddWorkzone/Odd_Dataset_01" type="simple_test_data"/>
+                    <mapper disableFiltersWhenEmpty="false"
+                        knownColumns="field1,field2" noAutoMap="">
+                        <mapping columnName="field2" tagName="field2" type="4"/>
+                        <filter columnIdx="1" columnName="field2">
+                            <fieldAction type="1">
+                                <fieldAction type="0"/>
+                            </fieldAction>
+                        </filter>
+                    </mapper>
+                    <testTree>
+                        <editableResource
+                            id="-6f8580d3:1774960f4b9:-7e4b"
+                            selfDescribing="The log actions enables you to output messages to console and a logging file."
+                            type="logging_action" version="1.0">
+                            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                            <resourceConfig append="true" description=""
+                                flush="true"
+                                loggingMessage="%%TEST/NAME%% showing iteration: %%field2%%"
+                                name="%%TEST/NAME%% showing iteration: %%field2%%"
+                                outputFile="" role="0"/>
+                        </editableResource>
+                    </testTree>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE">
+            <tag defaultValue="" description="" name="field2"/>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>
